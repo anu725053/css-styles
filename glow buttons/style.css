@@ -1,0 +1,63 @@
+body{
+    background-image: url(123.png);
+    background-size: cover;
+    margin:0;
+    padding:0;
+
+}
+
+
+
+.container{
+   
+    text-align:right;
+    margin-top: 1%;
+}
+
+.btn{
+    border: 1px solid whitesmoke;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn1,.btn2,.btn3{
+    color:whitesmoke
+}
+
+  
+  .btn1:hover,.btn2:hover,.btn3:hover{
+    color: #fff;
+    box-shadow:-15px 0 50px rgba(255,20,152,1),15px 0 50px rgba(122,0,255,1);
+    text-shadow:0 0 10px rgba(255,255,255,0,50), 0,0,25px rgba(255,255,255,0.50), 0 0 35px rgba(255,255,255,0.50);
+  }
+  
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    border-radius:50%;
+    background:rgba(255,20,152,0);
+    filter:blur(4px);
+    z-index: -1;
+    transition: 2s;
+  }
+  .btn1::before,.btn2::before,.btn3::before{
+    top: 0;
+    background:rgba(255,20,152,1);
+    border-radius: 0 0 50% 50%;
+
+  }
+  
+ 
+  .btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
+    height: 180%;
+  }
+  
